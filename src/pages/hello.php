@@ -1,2 +1,3 @@
 <!-- baf.localhost/src/pages/hello.php -->
-Hello <?= htmlspecialchars(isset($name) ? $name : 'World', ENT_QUOTES, 'UTF-8'); ?>
+<?php /** @var string $name */ ?>
+Hello <?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>
